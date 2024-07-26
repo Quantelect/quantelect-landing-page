@@ -1,16 +1,16 @@
 {  
   "name": "quantelect-landing-page",  
   "version": "1.0.0",  
-  "description": "Quantelect landing page project",  
+  "description": "Quantelect landing page",  
   "main": "index.js",  
   "scripts": {  
-    "build": "echo 'No build step specified'",  
-    "dev": "netlify dev"  
+    "build": "echo 'No build script defined'",  
+    "functions": "netlify-lambda serve functions"  
   },  
   "dependencies": {  
     "nodemailer": "^6.6.3"  
   },  
-  "devDependencies": {},  
-  "author": "",  
-  "license": "MIT"  
+  "devDependencies": {  
+    "netlify-lambda": "^1.6.3"  
+  }  
 }  
