@@ -55,8 +55,10 @@ To get a local copy up and running, follow these simple steps.
 1. **Create a `.env` file in the root directory:**  
   
     ```  
-    EMAIL_USER=your-email@example.com  
-    EMAIL_PASS=your-email-password  
+    EMAIL_USER=your-email@protonmail.com  
+    EMAIL_PASS=your-app-password  
+    SMTP_HOST=127.0.0.1  
+    SMTP_PORT=1025  
     ```  
   
 2. **Ensure `.env` is included in `.gitignore`.**  
