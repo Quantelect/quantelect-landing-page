@@ -3,6 +3,7 @@
 Welcome to the official repository for Quantelect's landing page. Quantelect is an early-stage AI startup exploring the possibilities of AI technology. This repository contains the source code for our landing page, including HTML, CSS, JavaScript, and Netlify Functions for form submission handling.  
   
 ## Table of Contents  
+  
 - [Overview](#overview)  
 - [Features](#features)  
 - [Getting Started](#getting-started)  
@@ -12,44 +13,68 @@ Welcome to the official repository for Quantelect's landing page. Quantelect is 
 - [License](#license)  
   
 ## Overview  
+  
 Quantelect is a proud member of the Microsoft Startup Founders Hub. Our landing page provides information about our journey, updates, and a contact form for inquiries and collaborations.  
   
 ## Features  
+  
 - Clean and professional design  
 - Responsive layout for various devices  
 - Smooth scrolling for internal links  
 - Contact form with validation and email functionality  
   
 ## Getting Started  
+  
 To get a local copy up and running, follow these simple steps.  
   
 ### Prerequisites  
-- A Netlify account for deployment  
-- Node.js installed on your local machine  
+  
+- A web server with PHP support (e.g., Apache, Nginx)  
+- Git  
+- Netlify account for deployment  
   
 ### Installation  
+  
 1. **Clone the repository:**  
+  
     ```sh  
     git clone https://github.com/Quantelect/quantelect-landing-page.git  
     cd quantelect-landing-page  
     ```  
   
-2. **Install dependencies:**  
-    ```sh  
-    npm install  
+2. **Place the files on your web server:**  
+  
+    - Ensure your web server is configured to serve the files in the directory.  
+  
+3. **Update the email recipient:**  
+  
+    - Open `send-email.js` and update the email configuration.  
+  
+### Configuring Environment Variables  
+  
+1. **Create a `.env` file in the root directory:**  
+  
+    ```  
+    EMAIL_USER=your-email@example.com  
+    EMAIL_PASS=your-email-password  
     ```  
   
-3. **Set up environment variables:**  
-    - Create a `.env` file in the root directory and add your ProtonMail credentials:  
+2. **Ensure `.env` is included in `.gitignore`.**  
+  
+3. **Deploy your site:**  
+  
     ```sh  
-    PROTONMAIL_USER=your-email@protonmail.com  
-    PROTONMAIL_PASS=your-email-password  
+    git add .  
+    git commit -m "Add email environment variables"  
+    git push origin main  
     ```  
   
 ### Deployment  
+  
 This project can be easily deployed using Netlify.  
   
 1. **Push the code to GitHub:**  
+  
     ```sh  
     git add .  
     git commit -m "Initial commit"  
@@ -57,25 +82,25 @@ This project can be easily deployed using Netlify.
     ```  
   
 2. **Deploy on Netlify:**  
+  
     - Log in to your Netlify account.  
     - Click on "New site from Git".  
     - Connect your GitHub account and select the `quantelect-landing-page` repository.  
     - Follow the prompts to deploy your site.  
   
-3. **Set up environment variables on Netlify:**  
-    - Go to your site's settings on Netlify.  
-    - Navigate to "Build & Deploy" > "Environment".  
-    - Add the `PROTONMAIL_USER` and `PROTONMAIL_PASS` environment variables.  
-  
 ### Configuring Email with Cloudflare and ProtonMail  
+  
 1. **Set up your domain on Cloudflare:**  
+  
     - Add your domain to Cloudflare and update your DNS settings to point to Netlify.  
   
 2. **Set up email forwarding on Cloudflare:**  
+  
     - Add an MX record to route emails to your ProtonMail account.  
     - Set up email forwarding rules to forward emails from your custom domain to your ProtonMail address.  
   
 ## Contributing  
+  
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.  
   
 1. Fork the Project.  
@@ -85,6 +110,7 @@ Contributions are what make the open-source community such an amazing place to l
 5. Open a Pull Request.  
   
 ## License  
+  
 Distributed under the MIT License. See `LICENSE` for more information.  
   
 ---  
