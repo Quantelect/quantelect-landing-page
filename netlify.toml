@@ -1,5 +1,5 @@
 [build]  
-  publish = "root"  
+  publish = "/"  
   command = "npm run build"  
   
 [[redirects]]  
