@@ -1,6 +1,6 @@
 # Quantelect Landing Page  
   
-Welcome to the official repository for Quantelect's landing page. Quantelect is an early-stage AI startup exploring the possibilities of AI technology. This repository contains the source code for our landing page, including HTML, CSS, JavaScript, and PHP for form submission handling.  
+Welcome to the official repository for Quantelect's landing page. Quantelect is an early-stage AI startup exploring the possibilities of AI technology. This repository contains the source code for our landing page, including HTML, CSS, JavaScript, and Netlify Functions for form submission handling.  
   
 ## Table of Contents  
 - [Overview](#overview)  
@@ -24,9 +24,8 @@ Quantelect is a proud member of the Microsoft Startup Founders Hub. Our landing 
 To get a local copy up and running, follow these simple steps.  
   
 ### Prerequisites  
-- A web server with PHP support (e.g., Apache, Nginx)  
-- Git  
-- Netlify account for deployment  
+- A Netlify account for deployment  
+- Node.js installed on your local machine  
   
 ### Installation  
 1. **Clone the repository:**  
@@ -35,13 +34,16 @@ To get a local copy up and running, follow these simple steps.
     cd quantelect-landing-page  
     ```  
   
-2. **Place the files on your web server:**  
-    - Ensure your web server is configured to serve the files in the directory.  
+2. **Install dependencies:**  
+    ```sh  
+    npm install  
+    ```  
   
-3. **Update the email recipient:**  
-    - Open `send-email.php` and update the `$recipient` variable with your ProtonMail address:  
-    ```php  
-    $recipient = "info@quantelect.com";  
+3. **Set up environment variables:**  
+    - Create a `.env` file in the root directory and add your ProtonMail credentials:  
+    ```sh  
+    PROTONMAIL_USER=your-email@protonmail.com  
+    PROTONMAIL_PASS=your-email-password  
     ```  
   
 ### Deployment  
@@ -59,6 +61,11 @@ This project can be easily deployed using Netlify.
     - Click on "New site from Git".  
     - Connect your GitHub account and select the `quantelect-landing-page` repository.  
     - Follow the prompts to deploy your site.  
+  
+3. **Set up environment variables on Netlify:**  
+    - Go to your site's settings on Netlify.  
+    - Navigate to "Build & Deploy" > "Environment".  
+    - Add the `PROTONMAIL_USER` and `PROTONMAIL_PASS` environment variables.  
   
 ### Configuring Email with Cloudflare and ProtonMail  
 1. **Set up your domain on Cloudflare:**  
