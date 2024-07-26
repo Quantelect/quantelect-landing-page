@@ -31,7 +31,7 @@ To get a local copy up and running, follow these simple steps.
 ### Installation  
 1. **Clone the repository:**  
     ```sh  
-    git clone https://github.com/your-username/quantelect-landing-page.git  
+    git clone https://github.com/Quantelect/quantelect-landing-page.git  
     cd quantelect-landing-page  
     ```  
   
