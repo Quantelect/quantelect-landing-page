@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {  
             // AJAX submission  
             const xhr = new XMLHttpRequest();  
-            xhr.open('POST', 'send-email.php', true);  
-            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');  
+            xhr.open('POST', '/.netlify/functions/send-email', true);  
+            xhr.setRequestHeader('Content-Type', 'application/json');  
             xhr.onreadystatechange = function() {  
                 if (xhr.readyState == 4 && xhr.status == 200) {  
                     const response = JSON.parse(xhr.responseText);  
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     }  
                 }  
             };  
-            xhr.send(`name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}&message=${encodeURIComponent(message)}`);  
+            xhr.send(JSON.stringify({ name, email, message }));  
         }  
     });  
   
