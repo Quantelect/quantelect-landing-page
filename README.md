@@ -31,8 +31,8 @@ To get a local copy up and running, follow these simple steps.
 ### Installation  
 1. **Clone the repository:**  
     ```sh  
-    git clone https://github.com/Quantelect/landing-page.git  
-    cd landing-page  
+    git clone https://github.com/your-username/quantelect-landing-page.git  
+    cd quantelect-landing-page  
     ```  
   
 2. **Place the files on your web server:**  
@@ -57,7 +57,7 @@ This project can be easily deployed using Netlify.
 2. **Deploy on Netlify:**  
     - Log in to your Netlify account.  
     - Click on "New site from Git".  
-    - Connect your GitHub account and select the `landing-page` repository.  
+    - Connect your GitHub account and select the `quantelect-landing-page` repository.  
     - Follow the prompts to deploy your site.  
   
 ### Configuring Email with Cloudflare and ProtonMail  
@@ -71,32 +71,15 @@ This project can be easily deployed using Netlify.
 ## Contributing  
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.  
   
-1. **Fork the Project:**  
-    - Create a fork of the repository within the organization if you have the necessary permissions.  
-    - Alternatively, clone the repository and create a new branch for your feature or fix.  
-  
-2. **Create your Feature Branch:**  
-    ```sh  
-    git checkout -b feature/AmazingFeature  
-    ```  
-  
-3. **Commit your Changes:**  
-    ```sh  
-    git commit -m 'Add some AmazingFeature'  
-    ```  
-  
-4. **Push to the Branch:**  
-    ```sh  
-    git push origin feature/AmazingFeature  
-    ```  
-  
-5. **Open a Pull Request:**  
-    - Go to the repository on GitHub.  
-    - Open a new pull request from your feature branch to the `main` branch.  
+1. Fork the Project.  
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`).  
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`).  
+4. Push to the Branch (`git push origin feature/AmazingFeature`).  
+5. Open a Pull Request.  
   
 ## License  
 Distributed under the MIT License. See `LICENSE` for more information.  
   
 ---  
   
-Thank you for contributing to the Quantelect repository. If you have any questions or suggestions, feel free to open an issue or contact us at [info@quantelect.com](mailto:info@quantelect.com).  
+Thank you for visiting our repository. If you have any questions or suggestions, feel free to open an issue or contact us at [info@quantelect.com](mailto:info@quantelect.com).  
