@@ -18,11 +18,16 @@ exports.handler = async (event, context) => {
   }  
   
   const transporter = nodemailer.createTransport({  
-    service: 'gmail', // You can use any SMTP service you prefer  
+    host: process.env.SMTP_HOST,  
+    port: process.env.SMTP_PORT,  
+    secure: false, // false for STARTTLS  
     auth: {  
       user: process.env.EMAIL_USER,  
       pass: process.env.EMAIL_PASS,  
     },  
+    tls: {  
+      rejectUnauthorized: false  
+    }  
   });  
   
   const mailOptions = {  
