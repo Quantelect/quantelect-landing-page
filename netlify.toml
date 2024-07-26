@@ -1,0 +1,8 @@
+[build]  
+  publish = "public"  # or the directory where your HTML files are located  
+  command = ""  
+  
+[[redirects]]  
+  from = "/*"  
+  to = "/index.html"  
+  status = 200  
