@@ -29,7 +29,6 @@ To get a local copy up and running, follow these simple steps.
   
 ### Prerequisites  
   
-- A web server with PHP support (e.g., Apache, Nginx)  
 - Git  
 - Netlify account for deployment  
   
@@ -54,7 +53,7 @@ To get a local copy up and running, follow these simple steps.
   
 1. **Create a `.env` file in the root directory:**  
   
-    ```  
+    ```sh  
     EMAIL_USER=your-email@protonmail.com  
     EMAIL_PASS=your-app-password  
     SMTP_HOST=127.0.0.1  
