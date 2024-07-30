@@ -1,4 +1,5 @@
 const nodemailer = require('nodemailer');  
+require('dotenv').config();  
   
 exports.handler = async (event, context) => {  
   if (event.httpMethod !== 'POST') {  
@@ -22,8 +23,8 @@ exports.handler = async (event, context) => {
     port: process.env.SMTP_PORT,  
     secure: false, // false for STARTTLS  
     auth: {  
-      user: process.env.EMAIL_USER,  
-      pass: process.env.EMAIL_PASS,  
+      user: process.env.EMAIL_USER, // your SMTP username from .env  
+      pass: process.env.EMAIL_PASS, // your SMTP token from .env  
     },  
     tls: {  
       rejectUnauthorized: false  
