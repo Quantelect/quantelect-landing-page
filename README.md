@@ -56,8 +56,8 @@ To get a local copy up and running, follow these simple steps.
     ```sh  
     EMAIL_USER=your-email@protonmail.com  
     EMAIL_PASS=your-app-password  
-    SMTP_HOST=127.0.0.1  
-    SMTP_PORT=1025  
+    SMTP_HOST=smtp.protonmail.ch
+    SMTP_PORT=587  
     ```  
   
 2. **Ensure `.env` is included in `.gitignore`.**  
