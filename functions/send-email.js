@@ -32,8 +32,9 @@ exports.handler = async (event, context) => {
     });  
   
     const mailOptions = {  
-        from: `"${name}" <${email}>`, // sender address  
+        from: `"${name}" <${process.env.EMAIL_USER}>`, // sender address  
         to: 'info@quantelect.com', // list of receivers  
+        replyTo: email, // setting the reply-to to the user's email  
         subject: `New Contact Form Submission from ${name}`, // Subject line  
         text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`, // plain text body  
     };  
